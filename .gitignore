@@ -24,9 +24,13 @@ hs_err_pid*
 replay_pid*
 
 /.metadata/
-*/.metadata/
-*/.settings/
-*/bin/
+**/.metadata/
+**/.settings/
+**/bin/
+
+**/.idea/
+**/__pycache__/
+
 *.classpath
 *.project
 *.docx
