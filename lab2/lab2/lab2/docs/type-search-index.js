@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"KI304.Ovcharenko.Lab2","l":"Engine"},{"p":"KI304.Ovcharenko.Lab2","l":"Hull"},{"p":"KI304.Ovcharenko.Lab2","l":"Logger"},{"p":"KI304.Ovcharenko.Lab2","l":"NavigationSystem"},{"p":"KI304.Ovcharenko.Lab2","l":"Ship"},{"p":"KI304.Ovcharenko.Lab2","l":"ShipDriver"}];updateSearchResults();
