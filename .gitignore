@@ -24,4 +24,9 @@ hs_err_pid*
 replay_pid*
 
 /.metadata/
+*/.metadata/
+*/.settings/
+*/bin/
+*.classpath
+*.project
 *.docx
