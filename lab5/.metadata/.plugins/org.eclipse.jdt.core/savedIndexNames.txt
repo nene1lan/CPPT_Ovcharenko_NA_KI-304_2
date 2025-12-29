@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\nikita\Desktop\repo\nulp\new_cppt\lab5\.metadata\.plugins\org.eclipse.jdt.core
+39645565.index
+3338404484.index
+1865797976.index

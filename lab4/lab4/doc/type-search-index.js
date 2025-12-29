@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"KI304.Ovcharenko.Lab4","l":"ExpressionCalculator"},{"p":"KI304.Ovcharenko.Lab4","l":"Lab4Driver"}];updateSearchResults();

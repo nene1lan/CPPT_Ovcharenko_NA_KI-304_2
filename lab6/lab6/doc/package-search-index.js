@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"lab6","l":"KI304.Ovcharenko.Lab6"}];updateSearchResults();

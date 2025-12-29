@@ -1,0 +1,47 @@
+package KI304.Ovcharenko.Lab5;
+
+import KI304.Ovcharenko.Lab4.ExpressionCalculator;
+
+/**
+ * Програма для тестування читання та запису
+ * результатів у текстовому і двійковому форматах.
+ *
+ * @author Ovcharenko
+ * @version 1.0
+ */
+public class Lab5Driver {
+
+    /**
+     * Точка входу в програму
+     *
+     * @param args аргументи командного рядка
+     */
+    public static void main(String[] args) {
+        double x = 1.2;
+
+        try {
+            // Обчислення (клас з Lab4)
+            ExpressionCalculator calculator = new ExpressionCalculator();
+            double y = calculator.calculate(x);
+
+            CalculationResult result = new CalculationResult(x, y);
+
+            // Текстовий файл
+            result.writeText("result.txt");
+            CalculationResult textResult =
+                    CalculationResult.readText("result.txt");
+
+            // Двійковий файл
+            result.writeBinary("result.bin");
+            CalculationResult binaryResult =
+                    CalculationResult.readBinary("result.bin");
+
+            // Вивід у консоль
+            System.out.println("З текстового файлу: " + textResult);
+            System.out.println("З двійкового файлу: " + binaryResult);
+
+        } catch (Exception e) {
+            System.out.println("Помилка: " + e.getMessage());
+        }
+    }
+}

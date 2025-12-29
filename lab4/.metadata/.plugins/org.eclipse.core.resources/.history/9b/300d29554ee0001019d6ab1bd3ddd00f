@@ -1,0 +1,34 @@
+package KI304.Ovcharenko.Lab4;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+/**
+ * Програма-драйвер для тестування класу ExpressionCalculator
+ *
+ * @author Ovcharenko
+ * @version 1.0
+ */
+public class Lab4Driver {
+
+    /**
+     * Точка входу в програму
+     *
+     * @param args аргументи командного рядка
+     */
+    public static void main(String[] args) {
+        ExpressionCalculator calculator = new ExpressionCalculator();
+        double x = 1.0; // тестове значення
+
+        try (FileWriter writer = new FileWriter("result.txt")) {
+            double result = calculator.calculate(x);
+            writer.write("x = " + x + "\n");
+            writer.write("y = " + result + "\n");
+            System.out.println("Результат успішно записано у файл.");
+        } catch (ArithmeticException e) {
+            System.out.println("Помилка обчислення: " + e.getMessage());
+        } catch (IOException e) {
+            System.out.println("Помилка роботи з файлом: " + e.getMessage());
+        }
+    }
+}
